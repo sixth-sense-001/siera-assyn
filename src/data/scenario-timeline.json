@@ -1,0 +1,1124 @@
+{
+  "snapshots": [
+    {
+      "id": "snapshot-0",
+      "title": "Normal Operations",
+      "timestamp": 1706000000000,
+      "description": "All systems operating normally. No active threats detected.",
+      "riskLevel": 10,
+      "affectedZones": [],
+      "evacuationRoutes": [],
+      "blockedRoadIds": [],
+      "stats": {
+        "atRisk": 0,
+        "evacuated": 0,
+        "roadsBlocked": 0,
+        "bridgesDown": 0
+      },
+      "alerts": [],
+      "floodZones": [],
+      "blockedEdges": [],
+      "shapData": [
+        {
+          "factor": "Flood Risk",
+          "value": 5,
+          "color": "#4ade80"
+        },
+        {
+          "factor": "Landslide Risk",
+          "value": 5,
+          "color": "#4ade80"
+        },
+        {
+          "factor": "Infrastructure",
+          "value": 5,
+          "color": "#4ade80"
+        }
+      ],
+      "citizenRoute": {
+        "name": "N/A",
+        "distance": "N/A",
+        "duration": "N/A",
+        "status": "safe",
+        "updateMessage": null
+      },
+      "meteoWarning": "No warnings. Conditions normal."
+    },
+    {
+      "id": "snapshot-1",
+      "title": "Weather Alert",
+      "timestamp": 1706010000000,
+      "description": "Heavy rainfall warning issued for Nyabihu district. Monitoring increased.",
+      "riskLevel": 35,
+      "affectedZones": [
+        "Jenda Sector",
+        "Karago Sector"
+      ],
+      "evacuationRoutes": [
+        "Route: Kabaya Evac"
+      ],
+      "blockedRoadIds": [],
+      "stats": {
+        "atRisk": 150,
+        "evacuated": 0,
+        "roadsBlocked": 0,
+        "bridgesDown": 0
+      },
+      "alerts": [
+        {
+          "type": "WARNING",
+          "zone": "Jenda Sector",
+          "risk": 35,
+          "cause": "Heavy rainfall",
+          "time": "08:00"
+        },
+        {
+          "type": "ELEVATED",
+          "zone": "Karago Sector",
+          "risk": 25,
+          "cause": "Weather monitoring",
+          "time": "08:15"
+        }
+      ],
+      "floodZones": [
+        {
+          "name": "Sebeya Flood Risk",
+          "polygonContours": [
+            [
+              29.535413045756435,
+              -1.583
+            ],
+            [
+              29.529947074355526,
+              -1.564052925644472
+            ],
+            [
+              29.511,
+              -1.563179454066016
+            ],
+            [
+              29.492047965297402,
+              -1.5640479652974044
+            ],
+            [
+              29.486159879562017,
+              -1.583
+            ],
+            [
+              29.4928762925406,
+              -1.6011237074593985
+            ],
+            [
+              29.511,
+              -1.6088197043954129
+            ],
+            [
+              29.527451165640702,
+              -1.5994511656407038
+            ],
+            [
+              29.535413045756435,
+              -1.583
+            ]
+          ]
+        }
+      ],
+      "blockedEdges": [],
+      "shapData": [
+        {
+          "factor": "Flood Risk",
+          "value": 45,
+          "color": "#f59e0b"
+        },
+        {
+          "factor": "Landslide Risk",
+          "value": 20,
+          "color": "#f59e0b"
+        },
+        {
+          "factor": "Infrastructure",
+          "value": 10,
+          "color": "#4ade80"
+        }
+      ],
+      "citizenRoute": {
+        "name": "Route: Kabaya Evac",
+        "distance": "12km",
+        "duration": "25min",
+        "status": "safe",
+        "updateMessage": null
+      },
+      "meteoWarning": "Heavy rainfall expected in Nyabihu district. Risk level moderate."
+    },
+    {
+      "id": "snapshot-2",
+      "title": "Rising Water Levels",
+      "timestamp": 1706020000000,
+      "description": "Sebeya River water levels rising rapidly. Evacuation preparations underway.",
+      "riskLevel": 55,
+      "affectedZones": [
+        "Sebeya Floodplains",
+        "Jenda Sector",
+        "Karago Sector"
+      ],
+      "evacuationRoutes": [
+        "Route: Rambura - HQ",
+        "Route: Kabaya Evac"
+      ],
+      "blockedRoadIds": [],
+      "stats": {
+        "atRisk": 450,
+        "evacuated": 120,
+        "roadsBlocked": 2,
+        "bridgesDown": 0
+      },
+      "alerts": [
+        {
+          "type": "ELEVATED",
+          "zone": "Sebeya Floodplains",
+          "risk": 50,
+          "cause": "River levels rising",
+          "time": "10:00"
+        },
+        {
+          "type": "WARNING",
+          "zone": "Jenda Sector",
+          "risk": 65,
+          "cause": "Flooding imminent",
+          "time": "10:30"
+        },
+        {
+          "type": "ELEVATED",
+          "zone": "Karago Sector",
+          "risk": 40,
+          "cause": "Water accumulation",
+          "time": "10:45"
+        }
+      ],
+      "floodZones": [
+        {
+          "name": "Primary Flood Zone",
+          "polygonContours": [
+            [
+              29.534620026135844,
+              -1.583
+            ],
+            [
+              29.53231939257575,
+              -1.5616806074242495
+            ],
+            [
+              29.511,
+              -1.5603196271030748
+            ],
+            [
+              29.493640948996987,
+              -1.5656409489969891
+            ],
+            [
+              29.482131153876654,
+              -1.583
+            ],
+            [
+              29.495148906166428,
+              -1.59885109383357
+            ],
+            [
+              29.511,
+              -1.6141178548234385
+            ],
+            [
+              29.533679653837552,
+              -1.6056796538375522
+            ],
+            [
+              29.534620026135844,
+              -1.583
+            ]
+          ]
+        },
+        {
+          "name": "Secondary Flood Zone",
+          "polygonContours": [
+            [
+              29.529135661866587,
+              -1.57
+            ],
+            [
+              29.525758221651916,
+              -1.5602417783480809
+            ],
+            [
+              29.516,
+              -1.552018832673361
+            ],
+            [
+              29.504751235507253,
+              -1.5587512355072546
+            ],
+            [
+              29.499418040904473,
+              -1.57
+            ],
+            [
+              29.50459345596712,
+              -1.5814065440328766
+            ],
+            [
+              29.516,
+              -1.5881359453943427
+            ],
+            [
+              29.52616573371361,
+              -1.5801657337136115
+            ],
+            [
+              29.529135661866587,
+              -1.57
+            ]
+          ]
+        }
+      ],
+      "blockedEdges": [],
+      "shapData": [
+        {
+          "factor": "Flood Risk",
+          "value": 70,
+          "color": "#f97316"
+        },
+        {
+          "factor": "Landslide Risk",
+          "value": 40,
+          "color": "#f59e0b"
+        },
+        {
+          "factor": "Infrastructure",
+          "value": 25,
+          "color": "#f59e0b"
+        }
+      ],
+      "citizenRoute": {
+        "name": "Route: Rambura - HQ",
+        "distance": "8km",
+        "duration": "18min",
+        "status": "safe",
+        "updateMessage": null
+      },
+      "meteoWarning": "Sebeya River rising. Possible flooding in lower areas."
+    },
+    {
+      "id": "snapshot-3",
+      "title": "Imminent Flood Risk",
+      "timestamp": 1706030000000,
+      "description": "Flood risk imminent for low-lying areas. Partial evacuations initiated.",
+      "riskLevel": 72,
+      "affectedZones": [
+        "Sebeya Floodplains",
+        "Jenda Sector",
+        "Karago Sector",
+        "Rambura Sector"
+      ],
+      "evacuationRoutes": [
+        "Route: Rambura - HQ",
+        "Route: Kabaya Evac",
+        "Route: Sebeya Bypass"
+      ],
+      "blockedRoadIds": [
+        "e1",
+        "r_e1"
+      ],
+      "stats": {
+        "atRisk": 850,
+        "evacuated": 380,
+        "roadsBlocked": 5,
+        "bridgesDown": 1
+      },
+      "alerts": [
+        {
+          "type": "CRITICAL",
+          "zone": "Sebeya Floodplains",
+          "risk": 85,
+          "cause": "Severe flooding",
+          "time": "12:00"
+        },
+        {
+          "type": "WARNING",
+          "zone": "Jenda Sector",
+          "risk": 75,
+          "cause": "Evacuation in progress",
+          "time": "12:15"
+        },
+        {
+          "type": "ELEVATED",
+          "zone": "Karago Sector",
+          "risk": 60,
+          "cause": "Road closures",
+          "time": "12:30"
+        },
+        {
+          "type": "WARNING",
+          "zone": "Rambura Sector",
+          "risk": 68,
+          "cause": "Landslide risk",
+          "time": "12:45"
+        }
+      ],
+      "floodZones": [
+        {
+          "name": "Primary Flood Zone",
+          "polygonContours": [
+            [
+              29.542310798479075,
+              -1.583
+            ],
+            [
+              29.534049812740477,
+              -1.5599501872595214
+            ],
+            [
+              29.511,
+              -1.5481982192518655
+            ],
+            [
+              29.492646844038166,
+              -1.5646468440381678
+            ],
+            [
+              29.477435846680585,
+              -1.583
+            ],
+            [
+              29.487064991587175,
+              -1.6069350084128227
+            ],
+            [
+              29.511,
+              -1.616089779072883
+            ],
+            [
+              29.53121648472379,
+              -1.6032164847237909
+            ],
+            [
+              29.542310798479075,
+              -1.583
+            ]
+          ]
+        },
+        {
+          "name": "Secondary Flood Zone",
+          "polygonContours": [
+            [
+              29.532796116612175,
+              -1.57
+            ],
+            [
+              29.531847077452813,
+              -1.5541529225471862
+            ],
+            [
+              29.516,
+              -1.552770194289448
+            ],
+            [
+              29.503602763747043,
+              -1.5576027637470444
+            ],
+            [
+              29.495239401275636,
+              -1.57
+            ],
+            [
+              29.50094376869495,
+              -1.5850562313050505
+            ],
+            [
+              29.516,
+              -1.5934180117114594
+            ],
+            [
+              29.527949545403345,
+              -1.581949545403346
+            ],
+            [
+              29.532796116612175,
+              -1.57
+            ]
+          ]
+        },
+        {
+          "name": "Tertiary Flood Zone",
+          "polygonContours": [
+            [
+              29.534990875421133,
+              -1.58
+            ],
+            [
+              29.530642992275187,
+              -1.5693570077248145
+            ],
+            [
+              29.52,
+              -1.5678239258701798
+            ],
+            [
+              29.512282021009202,
+              -1.5722820210092028
+            ],
+            [
+              29.50899867383143,
+              -1.58
+            ],
+            [
+              29.50897877957772,
+              -1.5910212204222807
+            ],
+            [
+              29.52,
+              -1.5947633916337303
+            ],
+            [
+              29.529377331985,
+              -1.589377331985001
+            ],
+            [
+              29.534990875421133,
+              -1.58
+            ]
+          ]
+        }
+      ],
+      "blockedEdges": [
+        "e1",
+        "r_e1"
+      ],
+      "shapData": [
+        {
+          "factor": "Flood Risk",
+          "value": 85,
+          "color": "#ef4444"
+        },
+        {
+          "factor": "Landslide Risk",
+          "value": 65,
+          "color": "#f97316"
+        },
+        {
+          "factor": "Infrastructure",
+          "value": 55,
+          "color": "#f97316"
+        }
+      ],
+      "citizenRoute": {
+        "name": "Route: Rambura - HQ",
+        "distance": "8km",
+        "duration": "22min",
+        "status": "blocked",
+        "updateMessage": "Route A partially blocked due to flooding at Sector 3"
+      },
+      "meteoWarning": "Flooding imminent in low-lying areas. Full evacuation required."
+    },
+    {
+      "id": "snapshot-4",
+      "title": "Landslide Warning",
+      "timestamp": 1706040000000,
+      "description": "Slope instability detected on eastern highland. Landslide warning activated.",
+      "riskLevel": 85,
+      "affectedZones": [
+        "Sebeya Floodplains",
+        "Jenda Sector",
+        "Karago Sector",
+        "Rambura Sector",
+        "Kabaya Slopes"
+      ],
+      "evacuationRoutes": [
+        "Route: Rambura - HQ",
+        "Route: Kabaya Evac",
+        "Route: Jenda North",
+        "Route: Mukamira Main"
+      ],
+      "blockedRoadIds": [
+        "e1",
+        "r_e1",
+        "e2",
+        "r_e2",
+        "e4",
+        "r_e4"
+      ],
+      "stats": {
+        "atRisk": 1200,
+        "evacuated": 650,
+        "roadsBlocked": 12,
+        "bridgesDown": 3
+      },
+      "alerts": [
+        {
+          "type": "CRITICAL",
+          "zone": "Sebeya Floodplains",
+          "risk": 90,
+          "cause": "Severe flooding",
+          "time": "14:00"
+        },
+        {
+          "type": "CRITICAL",
+          "zone": "Kabaya Slopes",
+          "risk": 88,
+          "cause": "Landslide warning",
+          "time": "14:15"
+        },
+        {
+          "type": "WARNING",
+          "zone": "Jenda Sector",
+          "risk": 78,
+          "cause": "Infrastructure damage",
+          "time": "14:30"
+        },
+        {
+          "type": "WARNING",
+          "zone": "Karago Sector",
+          "risk": 72,
+          "cause": "Bridge collapse",
+          "time": "14:45"
+        },
+        {
+          "type": "ELEVATED",
+          "zone": "Rambura Sector",
+          "risk": 65,
+          "cause": "Road closures",
+          "time": "15:00"
+        }
+      ],
+      "floodZones": [
+        {
+          "name": "Primary Flood Zone",
+          "polygonContours": [
+            [
+              29.546653656292346,
+              -1.583
+            ],
+            [
+              29.533948104174556,
+              -1.5600518958254428
+            ],
+            [
+              29.511,
+              -1.5499656441982355
+            ],
+            [
+              29.487802612587934,
+              -1.5598026125879345
+            ],
+            [
+              29.478545919735616,
+              -1.583
+            ],
+            [
+              29.48949874053748,
+              -1.6045012594625179
+            ],
+            [
+              29.511,
+              -1.6182903266854245
+            ],
+            [
+              29.53637918743725,
+              -1.608379187437253
+            ],
+            [
+              29.546653656292346,
+              -1.583
+            ]
+          ]
+        },
+        {
+          "name": "Secondary Flood Zone",
+          "polygonContours": [
+            [
+              29.54271404302377,
+              -1.57
+            ],
+            [
+              29.53545281680974,
+              -1.5505471831902564
+            ],
+            [
+              29.516,
+              -1.5459848652401418
+            ],
+            [
+              29.495353477957707,
+              -1.5493534779577072
+            ],
+            [
+              29.4875227395856,
+              -1.57
+            ],
+            [
+              29.500353207851536,
+              -1.5856467921484636
+            ],
+            [
+              29.516,
+              -1.5958003909138512
+            ],
+            [
+              29.532127307997182,
+              -1.5861273079971858
+            ],
+            [
+              29.54271404302377,
+              -1.57
+            ]
+          ]
+        },
+        {
+          "name": "Tertiary Flood Zone",
+          "polygonContours": [
+            [
+              29.53648140469214,
+              -1.58
+            ],
+            [
+              29.532681850603534,
+              -1.567318149396464
+            ],
+            [
+              29.52,
+              -1.5598183045277256
+            ],
+            [
+              29.50612188603602,
+              -1.5661218860360222
+            ],
+            [
+              29.504491083472953,
+              -1.58
+            ],
+            [
+              29.505186097243296,
+              -1.5948139027567025
+            ],
+            [
+              29.52,
+              -1.5983533877026823
+            ],
+            [
+              29.531383158464894,
+              -1.5913831584648943
+            ],
+            [
+              29.53648140469214,
+              -1.58
+            ]
+          ]
+        },
+        {
+          "name": "Quaternary Flood Zone",
+          "polygonContours": [
+            [
+              29.5298613237921,
+              -1.575
+            ],
+            [
+              29.52775874350518,
+              -1.5672412564948173
+            ],
+            [
+              29.52,
+              -1.5655572068942902
+            ],
+            [
+              29.513650963946905,
+              -1.568650963946904
+            ],
+            [
+              29.510479628941347,
+              -1.575
+            ],
+            [
+              29.51148548683035,
+              -1.583514513169649
+            ],
+            [
+              29.52,
+              -1.587425136972613
+            ],
+            [
+              29.526462453792803,
+              -1.5814624537928028
+            ],
+            [
+              29.5298613237921,
+              -1.575
+            ]
+          ]
+        }
+      ],
+      "blockedEdges": [
+        "e1",
+        "r_e1",
+        "e2",
+        "r_e2",
+        "e4",
+        "r_e4"
+      ],
+      "shapData": [
+        {
+          "factor": "Flood Risk",
+          "value": 95,
+          "color": "#dc2626"
+        },
+        {
+          "factor": "Landslide Risk",
+          "value": 80,
+          "color": "#dc2626"
+        },
+        {
+          "factor": "Infrastructure",
+          "value": 75,
+          "color": "#ef4444"
+        }
+      ],
+      "citizenRoute": {
+        "name": "Route: Kabaya Evac",
+        "distance": "12km",
+        "duration": "35min",
+        "status": "blocked",
+        "updateMessage": "Route B delayed due to landslide debris clearance"
+      },
+      "meteoWarning": "Landslide and flood risk CRITICAL on eastern highland slopes."
+    },
+    {
+      "id": "snapshot-5",
+      "title": "Live Emergency Response",
+      "timestamp": 1706050000000,
+      "description": "Full emergency response in progress. Real-time coordination active.",
+      "riskLevel": 95,
+      "affectedZones": [
+        "Sebeya Floodplains",
+        "Jenda Sector",
+        "Karago Sector",
+        "Rambura Sector",
+        "Kabaya Slopes",
+        "Mukamira Junction"
+      ],
+      "evacuationRoutes": [
+        "Route: Rambura - HQ",
+        "Route: Kabaya Evac",
+        "Route: Sebeya Bypass",
+        "Route: Jenda North",
+        "Route: Mukamira Main"
+      ],
+      "blockedRoadIds": [
+        "e4",
+        "r_e4",
+        "e10",
+        "r_e10",
+        "e9",
+        "r_e9",
+        "e8",
+        "r_e8",
+        "e1",
+        "r_e1",
+        "e2",
+        "r_e2"
+      ],
+      "stats": {
+        "atRisk": 1800,
+        "evacuated": 1200,
+        "roadsBlocked": 18,
+        "bridgesDown": 5
+      },
+      "alerts": [
+        {
+          "type": "CRITICAL",
+          "zone": "Sebeya Floodplains",
+          "risk": 95,
+          "cause": "Severe flooding",
+          "time": "16:00"
+        },
+        {
+          "type": "CRITICAL",
+          "zone": "Kabaya Slopes",
+          "risk": 92,
+          "cause": "Landslide in progress",
+          "time": "16:10"
+        },
+        {
+          "type": "CRITICAL",
+          "zone": "Mukamira Junction",
+          "risk": 88,
+          "cause": "Infrastructure failure",
+          "time": "16:15"
+        },
+        {
+          "type": "CRITICAL",
+          "zone": "Jenda Sector",
+          "risk": 90,
+          "cause": "Evacuation emergency",
+          "time": "16:20"
+        },
+        {
+          "type": "WARNING",
+          "zone": "Karago Sector",
+          "risk": 75,
+          "cause": "Bridge damage",
+          "time": "16:25"
+        },
+        {
+          "type": "WARNING",
+          "zone": "Rambura Sector",
+          "risk": 80,
+          "cause": "Road network disruption",
+          "time": "16:30"
+        }
+      ],
+      "floodZones": [
+        {
+          "name": "Primary Flood Zone",
+          "polygonContours": [
+            [
+              29.545379306845323,
+              -1.583
+            ],
+            [
+              29.537233558354192,
+              -1.556766441645806
+            ],
+            [
+              29.511,
+              -1.5401144161861633
+            ],
+            [
+              29.477710168777374,
+              -1.549710168777375
+            ],
+            [
+              29.474614045716823,
+              -1.583
+            ],
+            [
+              29.483302092738608,
+              -1.6106979072613927
+            ],
+            [
+              29.511,
+              -1.628756222028767
+            ],
+            [
+              29.54520517067318,
+              -1.6172051706731816
+            ],
+            [
+              29.545379306845323,
+              -1.583
+            ]
+          ]
+        },
+        {
+          "name": "Secondary Flood Zone",
+          "polygonContours": [
+            [
+              29.547066616210824,
+              -1.57
+            ],
+            [
+              29.540190021614197,
+              -1.5458099783858001
+            ],
+            [
+              29.516,
+              -1.536845491758489
+            ],
+            [
+              29.496925259993933,
+              -1.5509252599939334
+            ],
+            [
+              29.490877551849763,
+              -1.57
+            ],
+            [
+              29.49577683515336,
+              -1.590223164846638
+            ],
+            [
+              29.516,
+              -1.6001797173184507
+            ],
+            [
+              29.539462832188043,
+              -1.5934628321880449
+            ],
+            [
+              29.547066616210824,
+              -1.57
+            ]
+          ]
+        },
+        {
+          "name": "Tertiary Flood Zone",
+          "polygonContours": [
+            [
+              29.538715227704657,
+              -1.58
+            ],
+            [
+              29.533895477003487,
+              -1.5661045229965118
+            ],
+            [
+              29.52,
+              -1.5535886654372637
+            ],
+            [
+              29.505070562115232,
+              -1.5650705621152325
+            ],
+            [
+              29.499658812761208,
+              -1.58
+            ],
+            [
+              29.505552638969046,
+              -1.5944473610309529
+            ],
+            [
+              29.52,
+              -1.606002832644039
+            ],
+            [
+              29.537683838397328,
+              -1.5976838383973269
+            ],
+            [
+              29.538715227704657,
+              -1.58
+            ]
+          ]
+        },
+        {
+          "name": "Quaternary Flood Zone",
+          "polygonContours": [
+            [
+              29.531447198379034,
+              -1.575
+            ],
+            [
+              29.527873727091205,
+              -1.5671262729087936
+            ],
+            [
+              29.52,
+              -1.5628164514305969
+            ],
+            [
+              29.513318630804683,
+              -1.5683186308046817
+            ],
+            [
+              29.50950890221332,
+              -1.575
+            ],
+            [
+              29.5121317158489,
+              -1.5828682841511017
+            ],
+            [
+              29.52,
+              -1.5857481681899093
+            ],
+            [
+              29.526249925978686,
+              -1.5812499259786843
+            ],
+            [
+              29.531447198379034,
+              -1.575
+            ]
+          ]
+        },
+        {
+          "name": "Quinary Flood Zone",
+          "polygonContours": [
+            [
+              29.52085924709157,
+              -1.579
+            ],
+            [
+              29.520144675240456,
+              -1.571855324759545
+            ],
+            [
+              29.513,
+              -1.5705194946028744
+            ],
+            [
+              29.50633935061464,
+              -1.5723393506146366
+            ],
+            [
+              29.505718592266273,
+              -1.579
+            ],
+            [
+              29.506684938756166,
+              -1.5853150612438371
+            ],
+            [
+              29.513,
+              -1.589663011239992
+            ],
+            [
+              29.518381253643497,
+              -1.5843812536434951
+            ],
+            [
+              29.52085924709157,
+              -1.579
+            ]
+          ]
+        }
+      ],
+      "blockedEdges": [
+        "e4",
+        "r_e4",
+        "e10",
+        "r_e10",
+        "e9",
+        "r_e9",
+        "e8",
+        "r_e8",
+        "e1",
+        "r_e1",
+        "e2",
+        "r_e2"
+      ],
+      "shapData": [
+        {
+          "factor": "Flood Risk",
+          "value": 98,
+          "color": "#b91c1c"
+        },
+        {
+          "factor": "Landslide Risk",
+          "value": 90,
+          "color": "#dc2626"
+        },
+        {
+          "factor": "Infrastructure",
+          "value": 95,
+          "color": "#b91c1c"
+        }
+      ],
+      "citizenRoute": {
+        "name": "Route: Sebeya Bypass",
+        "distance": "15km",
+        "duration": "45min",
+        "status": "blocked",
+        "updateMessage": "Emergency response active - follow evacuation signage"
+      },
+      "meteoWarning": "Full emergency response active. Follow official Meteo Rwanda and local authority instructions."
+    }
+  ]
+}
