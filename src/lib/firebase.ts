@@ -1,5 +1,5 @@
-import { initializeApp, type FirebaseApp } from 'firebase/app';
-import { off, update, getDatabase as _getDatabase, ref, onValue } from 'firebase/database';
+import { initializeApp, type FirebaseApp, getApps } from 'firebase/app';
+import { getDatabase, type Database, ref, onValue, off, update } from 'firebase/database';
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -9,8 +9,14 @@ const firebaseConfig = {
   appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
 };
 
-const firebaseApp: FirebaseApp = initializeApp(firebaseConfig);
+function getFirebaseApp(): FirebaseApp {
+  const existing = getApps();
+  if (existing.length > 0) return existing[0];
+  return initializeApp(firebaseConfig);
+}
 
-export const database = _getDatabase(firebaseApp);
+export function getDatabaseInstance(): Database {
+  return getDatabase(getFirebaseApp());
+}
 
-export { firebaseApp, ref, onValue, off, update };
+export { ref, onValue, off, update };

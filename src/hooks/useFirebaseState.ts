@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { database, ref, onValue, off, update } from '@/lib/firebase';
+import { getDatabaseInstance, ref, onValue, off, update } from '@/lib/firebase';
 
 type FirebaseState = {
   currentSnapshotIndex: number;
@@ -30,6 +30,7 @@ export function useFirebaseState() {
   const [error, setError] = useState<Error | null>(null);
 
   useEffect(() => {
+    const database = getDatabaseInstance();
     const stateRef = ref(database, 'siera-demo/state');
 
     const listener = onValue(
@@ -59,7 +60,8 @@ export function useFirebaseState() {
 
   const updateSnapshotIndex = useCallback(
     async (index: number) => {
-      const stateRef = ref(database, 'siera-demo/state');
+      const db = getDatabaseInstance();
+      const stateRef = ref(db, 'siera-demo/state');
       await update(stateRef, {
         currentSnapshotIndex: index,
         lastUpdated: Date.now(),
@@ -70,7 +72,8 @@ export function useFirebaseState() {
 
   const setDemoRunning = useCallback(
     async (running: boolean) => {
-      const stateRef = ref(database, 'siera-demo/state');
+      const db = getDatabaseInstance();
+      const stateRef = ref(db, 'siera-demo/state');
       await update(stateRef, {
         demoRunning: running,
         lastUpdated: Date.now(),
