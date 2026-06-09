@@ -169,8 +169,6 @@ export default function MapView() {
         style={{ width: '100%', height: '100%', filter: 'grayscale(30%)' }}
       >
         <DeckGL 
-          initialViewState={{ longitude: 29.522, latitude: -1.579, zoom: 14, pitch: 45 }}
-          controller={true}
           layers={deckLayers}
         />
 
